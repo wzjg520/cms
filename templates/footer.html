@@ -1,0 +1,30 @@
+<div id="link">
+	<h2><span><a href="friendlink.php?action=show">所有链接</a> | <a href="friendlink.php?action=add">申请加入</a></span>友情链接</h2>
+	{if $textlink}
+				<ul>
+				{foreach $textlink(key,value)}
+					<li><a href="{@value->weburl}" target="_blank">{@value->webname}</a></li>
+				{/foreach}
+				</ul>
+			{else}
+			<p>暂时没有数据</p>
+	{/if}
+	
+	{if $logolink}
+			
+		{foreach $logolink(key,value)}
+		<dl>
+			<dd><a href="{@value->weburl}" target="_blank" ><img src="{@value->logourl}" alt="{@webname}" title="{@webname}"/></a></dd>
+		</dl>
+		{/foreach}
+			
+	{else}
+		<p>暂时没有数据</p>
+	{/if}
+
+
+</div>
+<div id="footer">
+	<p>Powered by <a href="#" target="_bank"> YC60.COM</a> (C) 2004-2011 DesDev Inc.</p>
+	<p>Copyright (C) 2004-2011 YC60CMS. <a href="#" target="_bank">瓢城Web俱乐部</a> 版权所有</p>
+</div>

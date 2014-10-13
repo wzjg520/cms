@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" href="style/basic.css" type="text/css"/>
+<link rel="stylesheet" href="style/friendlink.css" type="text/css"/>
+<script type="text/javascript" src="js/link.js"></script>
+<title>{$webname}</title>
+</head>
+<body>
+	{include file='header.html'}
+	{if $add}
+	<div id="friendlink">
+		<h2>会员注册</h2>
+		<form action="?action=add" method="post" name="add">
+			<dl>
+				<dd>网站类型：<input type="radio" name="type" value="1" checked="checked" onclick="link(1);" />文字链接<input type="radio" name="type" onclick="link(2);" value="2" />图片链接</dd>
+				<dd>网站名称：<input type="text" name="webname" class="text"/><span> [必填]</span>(*网站名称长度2到20位)</dd>
+				<dd>网站地址：<input type="text" name="weburl" class="text"/><span> [必填]</span>(*请填写本网站的网址,不得大于50位)</dd>
+				<dd id="logo" style="display:none;">Logo地址：<input type="text" name="logourl" class="text"/><span> [必填]</span>(*请填写图片链接地址)</dd>
+				<dd>站 长 名：<input type="text" name="user" class="text"/><span></span></dd>
+				<dd>联系邮箱：<input type="text" name="email" class="text"/><span></span></dd>
+				<dd>验 证 码：<input type="text" name="code" class="text code"/></dd>
+				<dd class="des">输入下图中的字符，不区分大小写</dd>
+				<dd><img class="code"src="config/code.php" alt="验证码" onclick=" this.src='config/code.php?jiajun='+Math.random();"/></dd>
+				<dd>提　　交：<input type="submit" name="send" onclick="return checkForm();" class="sub"  value="申请链接"/></dd>
+			</dl>
+		</form>
+	</div>
+	{/if}
+	{if $show}
+		<div id="showlink">
+			<h2>所有链接</h2>
+			<h3>文字连接</h3>
+			{if $textlink}
+				<ul>
+				{foreach $textlink(key,value)}
+					<li><a href="{@value->weburl}" target="_blank">{@value->webname}</a></li>
+				{/foreach}
+				</ul>
+			{else}
+			<p>暂时没有数据</p>
+			{/if}
+			<h3>logo链接</h3>
+			{if $logolink}
+			<ul>
+			{foreach $logolink(key,value)}
+				<li><a href="{@value->weburl}" target="_blank" ><img src="{@value->logourl}" alt="{@webname}" title="{@webname}"/></a></li>
+			{/foreach}
+			</ul>
+			{else}
+			<p>暂时没有数据</p>
+			{/if}
+			
+		</div>
+	{/if}
+	{include file='footer.html'}
+</body>
+</html>

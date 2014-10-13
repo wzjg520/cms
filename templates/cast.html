@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="style/basic.css"/>
+<link rel="stylesheet" type="text/css" href="style/cast.css"/>
+<title>my cms</title>
+</head>
+<body>
+{include file='header.html'}
+<div id="cast">
+	<h2>投票详情</h2>
+	<table cellspacing='1'>
+		
+		<caption>{$caption}</caption>
+		<tr><th>主题</th><th>图形比例</th><th>百分比</th><th>投票数</th></tr>
+		{if $option}
+			{foreach $option(key,value)}	
+		<tr><td>{@value->title}</td><td style="width:{$width}px;text-align:left;"><img src="images/b{@value->picnum}.jpg" style="width:{@value->picwidth}px;"/></td><td>{@value->percent}</td><td>{@value->count}</td></tr>
+			{/foreach}
+		
+		{/if}
+	</table>
+	
+</div>
+{include file='footer.html'}
+</body>
+</html>

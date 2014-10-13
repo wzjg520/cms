@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="style/basic.css"/>
+<link rel="stylesheet" type="text/css" href="style/list.css"/>
+<title>{$webname}</title>
+</head>
+<body>
+{include file='header.html'}
+<div id="left">
+	<h2>当前位置&gt;{$navList}</h2>
+	{if $content}
+		{foreach $content(key,value)}
+			<dl>
+				<dt><img src="{@value->thumb}"/></dt>
+				<dd>[<strong>{@value->nav_name}</strong>]<a href="details.php?id={@value->id}" class="title">{@value->title}</a></dd>
+				<dd>日期：{@value->date} 点击率：{@value->count} 关键字：{@value->keyword}</dd>
+				<dd>{@value->info}</dd>
+			</dl>
+		{/foreach}
+	{else}
+		<p>当前栏目没有信息</p>
+	{/if}
+
+	<div id="page">{$page}</div>
+</div>
+<div id="right">
+	
+	<div class="list">
+	<h2>本月本类推荐</h2>
+	<ul>
+		{if $monthRec}	
+			{foreach $monthRec(key,value)}
+				<li><em>{@value->date}</em><a href="details.php?id={@value->id}">{@value->title}.</a></li>
+			{/foreach}
+		{else}
+		<p>网站暂无数据</p>
+		{/if}
+	</ul>
+</div>
+<div class="list">
+	<h2>本月热点推荐</h2>
+	<ul>
+		{if $monthHot}	
+			{foreach $monthHot(key,value)}
+				<li><em>{@value->date}</em><a href="details.php?id={@value->id}">{@value->title}.</a></li>
+			{/foreach}
+		{else}
+		<p>网站暂无数据</p>
+		{/if}
+	</ul>
+</div>
+<div class="list">
+	<h2>本月图文推荐</h2>
+	<ul>
+		{if $monthHot}	
+			{foreach $monthHot(key,value)}
+				<li><em>{@value->date}</em><a href="details.php?id={@value->id}">{@value->title}</a></li>
+			{/foreach}
+		{else}
+		<p>网站暂无数据</p>
+		{/if}
+	</ul>
+</div>
+</div>
+
+{include file='footer.html'}
+</body>
+</html>

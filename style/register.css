@@ -1,0 +1,63 @@
+@CHARSET "UTF-8";
+#register{
+	border:1px solid #ccc;
+}
+#register form .text{
+	width:220px;
+	height:20px;
+	background:#eee;
+	border:1px solid #999;
+}
+#register form input.code{
+	width:80px;
+}
+#register form img.code{
+	width:120px;
+	height:50px;
+	margin-left:60px;
+	cursor:pointer;
+}
+#register form{
+	display:block;
+	padding:10px 0;
+}
+#register form dl{
+	padding:0 0 0 250px;
+}
+#register form dl dd{
+	padding:5px 0;
+}
+#register form dl dd img.faceimg{
+	margin:0 0 0 60px;
+}
+#register form dl dd span{
+	color:red;
+}
+#register form dl dd.des{
+	color:orange;
+}
+#register form dl dd input.sub{
+	padding:1px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

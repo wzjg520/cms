@@ -1,0 +1,316 @@
+@CHARSET "UTF-8";
+body,ul,li,ol,h1,h2,h3,dl,dd,dt,p,form{
+	margin:0;
+	padding:0;
+}
+body{
+	font-size:12px;
+}
+a{
+	text-decoration:none;
+}
+ul,ol{
+	list-style-type:none;
+}
+body{
+	font-size:12px;
+	font-family:宋体;
+	background:#fff;
+}
+textarea{
+	font-size:12px;
+	color:#999;
+}
+#top{
+	background:url(../images/admin_top_bg.gif);
+}
+#top h1{
+	width:150px;
+	height:80px;
+	text-indent:-9999px;
+	float:left;
+	background:url(../images/logosmall.png) no-repeat left center;
+}
+#top ul{
+	float:left;
+	padding:47px 0 0 10px;
+}
+#top ul li{
+	float:left;
+	padding:0 0 0 10px;
+}
+#top ul li a{
+	width:58px;
+	height:33px;
+	display:block;
+	color:#fff;
+	line-height:33px;
+	text-align:center;
+	font-size:14px;
+	font-weight:bold;
+	background:url(../images/li_bg.png) no-repeat left bottom;
+}
+#top ul li a.checked{
+	background:url(../images/li_bg.png) no-repeat right bottom;
+	color:blue;
+}
+
+#top p{
+	float:right;
+	padding:35px 10px 0 0;
+	color:#fff;
+}
+#top p a{
+	color:#fff;
+}
+#top p a:hover{
+	text-decoration:underline;
+}
+#sidebar{
+	background:#f7fbfc url(../images/sidebar_right.png) repeat-y right;
+}
+#sidebar dl{
+	padding:20px;
+	text-indent:5px;
+}
+#sidebar dl dt{
+	color:#3b6ea5;
+	font-size:14px;
+	font-weight:bold;
+	padding:5px 0;
+	margin:5px 0;
+	border-bottom:1px solid #ccc;
+}
+#sidebar dl dd{
+	height:22px;
+	line-height:22px;
+}
+#sidebar dl dd a{
+	color:#333;
+}
+#sidebar dl dd a:hover{
+	text-decoration:underline;
+}
+#main{
+	background:#fff;
+}
+#main div.map{
+	padding:15px;
+	color:#333;
+}
+#main ol{
+	padding:0 0 5px 30px;
+
+}
+#main ol li{
+	display:inline-block;
+}
+#main ol li a{
+	padding:5px;
+	display:block;
+}
+#main ol li a:hover{
+	text-decoration:none;
+}
+#main ol li a.selected{
+	background:#3b6ea5;
+	color:#fff;
+}
+#main form textarea{
+	width:200px;
+	height:100px;
+	border:1px solid #ccc;
+}
+#main .table{
+	width:95%;
+	text-align:center;
+	margin:0 auto;
+}
+#main .table tr{
+	background:#fff;
+	font-size:12px;
+
+}
+#main .table tr:hover{
+	background:orange;
+}
+#main .table tr th,#main .table tr td{
+	height:25px;
+	line-height:25px;
+	color:#333;
+
+}
+#main .table tr th{
+	background:#eef3f7;
+	border-bottom:1px solid #d5dfd8;
+	font-weight:normal;
+}
+#main .table td{
+	border-bottom:1px solid #eee;
+}
+#main a{
+	color:blue;
+}
+#main a:hover{
+	text-decoration:underline;
+}
+#main p{
+	font-size:14px;
+	text-align:center;
+	padding:15px 0 10px 0;
+}
+#main .table tr td{
+	text-align:center;
+}
+#main table.common tr td{
+	text-align:left;
+}
+
+#main table.common tr td img.face{
+	margin:0 0 0 60px;
+	display:block;
+}
+
+#main .table tr td input.text{
+	width:150px;
+	border:1px solid #ccc;
+	background:#fff;
+}
+#main .table tr td input.sort{
+	width:30px;
+	text-align:center;
+
+}
+#main .table tr td input.sendSort{
+	background:#fff;
+	border:1px solid #ccc;
+	width:45px;
+	cursor:pointer;
+}
+#main .table tr td select.text{
+	border:1px solid #ccc;
+}
+#main .table tr td select optgroup{
+	font-style:normal;
+}
+
+#main .table tr td input.submit{
+	border:1px solid #ccc;
+	background:#fff;
+	margin:0 10px 0 60px;
+	padding:1px;
+}
+#main form table.content tr td {
+	text-align:left;
+	padding:5px 0 5px 5px;
+}
+#main form table.content tr.ckeditor{
+	background:#fff;
+}
+#main form table.content tr td input.text{
+	width:500px;
+}
+#main form table.content tr td input.small{
+	width:50px;
+}
+#main form table.content tr td textarea{
+	width:500px;
+	height:80px;
+}
+
+
+#page{
+	font-size:14px;
+	text-align:center;
+	padding:10px 0 0 0;
+}
+#page a,#page span.disable{
+	border:1px solid #666;
+	padding:2px 5px;
+	margin:0 2px;
+}
+#page span.disable{
+	border:1px solid #999;
+	color:#999;
+}
+#page a:hover,#page a.index{
+	background:#666;
+	color:#fff;
+	text-decoration:none;
+}
+#page select optgroup{
+	font-style:normal;
+}
+#page form{
+	display:inline;
+}
+#adminbg{
+	background:#3b6ea5;
+}
+#adminlogin fieldset{
+	width:350px;
+	height:250px;
+	border:none;
+	border-left:2px solid #fff;
+	color:#fff;
+	font-size:14px;
+	margin:160px auto 0 auto;
+}
+#adminlogin fieldset legend{
+	font-size:18px;
+	color:#fff;
+}
+#adminlogin fieldset label{
+	display:block;
+	padding:10px 0 0 30px;
+}
+#adminlogin fieldset label .code{
+	cursor:pointer;
+}
+#adminlogin fieldset label.des{
+	color:yellow;
+	font-size:12px;
+}
+#adminlogin fieldset .text{
+	background:#fff;
+	border:1px solid #ccc;
+	width:180px;
+}
+#adminlogin fieldset .sub{
+	width:50px;
+	padding:3px;
+	font-size:14px;
+	margin:10px 0 0 30px ;
+}
+#main form span.red{
+	color:red;
+}
+#main form span.green{
+	color:green;
+}
+.green{
+	color:green;
+}
+.red{
+	color:red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

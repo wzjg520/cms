@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" href="../style/admin.css" type="text/css"/>
+<script type="text/javascript" src="../js/admin_lever.js"></script>
+<title>main</title>
+</head>
+
+<body id="main">
+	<div class="map">
+		管理员首页&gt;&gt;管理员管理&gt;&gt;<strong style="color:green;" id="title">{$current}</strong>
+	</div>
+	<ol>
+		<li><a href="lever.php?action=show" class="selected">等级列表</a></li>
+		<li><a href="lever.php?action=add">添加等级</a></li>
+		{if $update}
+			<li><a href="lever.php?action=update&id={$id}">修改等级</a></li>
+		{/if}
+	</ol>
+	{if $add}
+	<form method="post" action="" name="add">
+		<table class="table common">
+				<tr><td>等级名称：<input type="text" name="lever_name" class="text"/></td></tr>
+				<tr><td>等级描述：<textarea name="lever_info"></textarea></td></tr>
+				<tr><td><input type="submit" value="添加等级" class="submit" name="send" onclick="return checkAddForm()"/>[ <a href="lever.php?action=show">返回列表</a> ]</td></tr>
+		</table>
+	</form>
+	{/if}
+	{if $delete}
+	 '删除页面'
+	{/if}
+	{if $update}
+		<form method="post" action="" name="update">
+		<input type="hidden" name="id" value="{$oneLever->id}"/>
+		<input type="hidden" name="prev_url" value="{$prev_url}"/>
+		<table class="table common">
+				<tr><td>等级名称：<input type="text" name="lever_name" class="text" value="{$oneLever->lever_name}"/></td></tr>
+				<tr><td>等级描述：<textarea name="lever_info" >{$oneLever->lever_info}</textarea></td></tr>
+				<tr><td style="padding-right:100px;">权限设定：
+					{if $premission}
+						{foreach $premission(key,value)}
+							<label style="display:inline-block;"><input type="checkbox" {@value->checked} name="premission[]" value="{@value->id}"/>{@value->name}</label>
+						{/foreach}
+					{/if}
+				</td></tr>
+				<tr><td><input type="submit" value="修改等级" class="submit" name="send" onclick="return checkUpdateForm()"/>[ <a href="lever.php?action=show">返回列表</a> ]</td></tr>
+		</table>
+	</form>
+	{/if}
+
+	{if $show}
+	<table cellspacing="0" class="table">
+		<tr><th>编号</th><th>等级名称</th><th>等级描述</th><th>权限标示</th><th>操作</th></tr>
+		{if $allLever}
+		{foreach $allLever(key,value)}
+			<tr>
+					<td><script>document.write({@key+1}+{$num})</script></td>
+					<td>{@value->lever_name}</td>
+					<td>{@value->lever_info}</td>
+					<td>{@value->premission}</td>
+					<td>[ <a href="?action=update&id={@value->id}">修改</a> ][ <a href="?action=delete&id={@value->id}" onclick="return confirm('你真的要删除吗')?true:false">删除</a> ]</td>
+			</tr>
+		{/foreach}
+		{else}
+				<tr><td colspan="5">暂时没有数据</td></tr>
+		{/if}
+	</table>
+	<p>[ <a href="?action=add">添加等级</a> ]</p>
+	<div id="page">{$page}</div>
+	{/if}
+
+</body>
+
+
+
+</html>

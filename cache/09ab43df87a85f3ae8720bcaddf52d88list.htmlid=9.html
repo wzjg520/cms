@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="style/basic.css"/>
+<link rel="stylesheet" type="text/css" href="style/list.css"/>
+<title>我的第一个cms系统</title>
+</head>
+<body>
+<div id="top">
+	<script type="text/javascript" src="config/static.php?type=header"></script>
+	<script>getHeader();</script>	<script src="js/text_adver.js"></script>
+</div>
+<div id="header">
+	<a href="#"><h1>mycms系统</h1></a>
+	<div class="adver"><script type="text/javascript" src="js/header_adver.js"></script></div>
+</div>
+<div id="nav">
+	<ul>
+	<li><a href="index.php">首页</a></li>
+						<li><a href="list.php?id=1">军事动态</a></li>
+					<li><a href="list.php?id=2">八卦娱乐</a></li>
+					<li><a href="list.php?id=3">时尚女人</a></li>
+					<li><a href="list.php?id=4">科技频道</a></li>
+					<li><a href="list.php?id=5">智能手机</a></li>
+					<li><a href="list.php?id=7">美容护肤</a></li>
+					<li><a href="list.php?id=8">热门汽车</a></li>
+					<li><a href="list.php?id=9">房产家居</a></li>
+					<li><a href="list.php?id=10">读书教育</a></li>
+					<li><a href="list.php?id=11">股票基金</a></li>
+				</ul>
+</div>
+<div id="search">
+	<form method="get" action="search.php">
+				<select name="searchtype">
+					<option value="0">按关键字</option>
+					<option value="1">按文章标题</option>
+				</select>
+				<input type="text" name="searchkeyword" class="text"/>
+				<input type="submit" name="sent" class="sub" value="查找"/>
+	</form>
+	<strong>TAG标签：</strong>
+	<ul>
+									<li><a href="search.php?searchtype=2&tag=XOOM">XOOM</a>(46)</li>
+							<li><a href="search.php?searchtype=2&tag=平板电脑">平板电脑</a>(17)</li>
+							<li><a href="search.php?searchtype=2&tag=双核">双核</a>(14)</li>
+							<li><a href="search.php?searchtype=2&tag=文章，姚笛，马伊琍">文章，姚笛，马伊琍</a>(13)</li>
+							<li><a href="search.php?searchtype=2&tag=ipad3">ipad3</a>(11)</li>
+						</ul>
+
+</div><div id="left">
+	<h2>当前位置&gt;<a href="list.php?id=9">房产家居</a></h2>
+			<p>当前栏目没有信息</p>
+	
+	<div id="page"><a href="/web/cms/list.php?id=9&page=1" class="index">1</a><span class="disable">上一页</span><span class="disable">下一页</span></div>
+</div>
+<div id="right">
+	<div class="nav">
+		<h2>子栏目列表</h2>
+					<span>暂时没有子栏目</span>
+			</div>
+	<div class="list">
+	<h2>本月本类推荐</h2>
+	<ul>
+				<p>网站暂无数据</p>
+			</ul>
+</div>
+<div class="list">
+	<h2>本月热点推荐</h2>
+	<ul>
+				<p>网站暂无数据</p>
+			</ul>
+</div>
+<div class="list">
+	<h2>本月图文推荐</h2>
+	<ul>
+				<p>网站暂无数据</p>
+			</ul>
+</div>
+</div>
+
+<div id="link">
+	<h2><span><a href="friendlink.php?action=show">所有链接</a> | <a href="friendlink.php?action=add">申请加入</a></span>友情链接</h2>
+					<ul>
+									<li><a href="http://www.aiqiyi.com" target="_blank">爱奇艺</a></li>
+									<li><a href="http://www.taobao.com" target="_blank">淘宝</a></li>
+									<li><a href="http://www.qq.com" target="_blank">腾讯</a></li>
+									<li><a href="http://baidu.com" target="_blank">百度</a></li>
+								</ul>
+				
+				
+				<dl>
+			<dd><a href="http://www.youku.com" target="_blank" ><img src="/phptest/myCms/images/youku.png" alt="" title=""/></a></dd>
+		</dl>
+				<dl>
+			<dd><a href="http://baidu.com" target="_blank" ><img src="/phptest/myCms/images/baidu.png" alt="" title=""/></a></dd>
+		</dl>
+					
+	
+
+</div>
+<div id="footer">
+	<p>Powered by <a href="#" target="_bank"> YC60.COM</a> (C) 2004-2011 DesDev Inc.</p>
+	<p>Copyright (C) 2004-2011 YC60CMS. <a href="#" target="_bank">瓢城Web俱乐部</a> 版权所有</p>
+</div></body>
+</html>

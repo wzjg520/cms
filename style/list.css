@@ -1,0 +1,111 @@
+@CHARSET "UTF-8";
+
+#left {
+    width: 690px;
+    min-height: 600px;
+    float: left;
+    margin-bottom: 10px;
+}
+
+#left h2 {
+    border: 1px solid #ccc;
+    border-bottom: none;
+}
+
+#left dl {
+    float: left;
+    padding: 10px 0;
+    border-bottom: 1px dashed #ccc;
+}
+
+#left dt {
+    float: left;
+}
+
+#left dl dt img {
+    display: block;
+    border: 1px solid #ccc;
+}
+
+#left dl dd a.title {
+    color: blue;
+    padding: 0 5px;
+}
+
+#left dd {
+    width: 520px;
+    float: left;
+    margin-left: 10px;
+    line-height: 20px;
+}
+
+#left a:hover {
+    text-decoration: underline;
+}
+
+#right {
+    width: 260px;
+    min-height: 600px;
+    float: right;
+    margin-bottom: 10px;
+}
+
+#right .nav {
+    text-align: center;
+    padding: 0 0 10px 0;
+    border: 1px solid #ccc;
+}
+
+#right .nav a {
+    color: #666;
+}
+
+#right .nav a:hover {
+    color: orange;
+}
+
+#right .nav strong {
+    display: inline-block;
+    width: 100px;
+    height: 25px;
+    line-height: 25px;
+    color: #777;
+    border: 1px solid #ccc;
+    background: #eef3f7;
+    margin: 5px 0 0 0;
+}
+
+#right .list {
+    width: 100%;
+    border: 1px solid #ccc;
+    float: left;
+    margin-bottom: 10px;
+    margin: 10px 0 0 0;
+}
+
+#right .list ul {
+    padding: 0 10px;
+}
+
+#right .list ul li {
+    height: 20px;
+    line-height: 20px;
+    padding: 2px 0;
+    background: url(../images/pointer.png) no-repeat left center;
+    text-indent: 10px;
+}
+
+#right .list ul li a {
+    color: #666
+}
+
+#right .list ul li a:hover {
+    text-decoration: underline;
+}
+
+#right .list ul li em {
+    float: right;
+    font-family: Times New Roman;
+    font-style: normal;
+    color: maroon;
+}

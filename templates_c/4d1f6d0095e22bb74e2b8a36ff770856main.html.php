@@ -1,0 +1,17 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" href="../style/admin.css" type="text/css"/>
+<title>main</title>
+</head>
+<body id="main">
+	<div class="map">
+		管理员首页&gt;&gt;后台管理
+	</div>
+	<table cellspacing="0" class="table">
+		<tr><th><strong>快捷操作</strong></th></tr>
+		<tr><td><input type="button" onclick="javascript:location.href='main.php?action=delCache'" value="清理缓存" />( 缓存目录现有 <strong><?php echo $this->_vars['cacheNum']?></strong> 个文件 )</td></tr>
+	</table>
+</body>
+</html>

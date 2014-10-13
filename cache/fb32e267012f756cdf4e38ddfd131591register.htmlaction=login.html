@@ -1,0 +1,96 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="style/basic.css"/>
+<link rel="stylesheet" type="text/css" href="style/register.css"/>
+<script type="text/javascript" src="js/user_reg.js"></script>
+
+<title>我的第一个cms系统</title>
+</head>
+<body>
+<div id="top">
+	<script type="text/javascript" src="config/static.php?type=header"></script>
+	<a href="register.php?action=login">登陆</a><a href="register.php?action=reg">注册</a>	<script src="js/text_adver.js"></script>
+</div>
+<div id="header">
+	<a href="#"><h1>mycms系统</h1></a>
+	<div class="adver"><script type="text/javascript" src="js/header_adver.js"></script></div>
+</div>
+<div id="nav">
+	<ul>
+	<li><a href="index.php">首页</a></li>
+						<li><a href="list.php?id=1">军事动态</a></li>
+					<li><a href="list.php?id=2">八卦娱乐</a></li>
+					<li><a href="list.php?id=3">时尚女人</a></li>
+					<li><a href="list.php?id=4">科技频道</a></li>
+					<li><a href="list.php?id=5">智能手机</a></li>
+					<li><a href="list.php?id=7">美容护肤</a></li>
+					<li><a href="list.php?id=8">热门汽车</a></li>
+					<li><a href="list.php?id=9">房产家居</a></li>
+					<li><a href="list.php?id=10">读书教育</a></li>
+					<li><a href="list.php?id=11">股票基金</a></li>
+				</ul>
+</div>
+<div id="search">
+	<form method="get" action="search.php">
+				<select name="searchtype">
+					<option value="0">按关键字</option>
+					<option value="1">按文章标题</option>
+				</select>
+				<input type="text" name="searchkeyword" class="text"/>
+				<input type="submit" name="sent" class="sub" value="查找"/>
+	</form>
+	<strong>TAG标签：</strong>
+	<ul>
+									<li><a href="search.php?searchtype=2&tag=XOOM">XOOM</a>(46)</li>
+							<li><a href="search.php?searchtype=2&tag=平板电脑">平板电脑</a>(17)</li>
+							<li><a href="search.php?searchtype=2&tag=双核">双核</a>(14)</li>
+							<li><a href="search.php?searchtype=2&tag=文章，姚笛，马伊琍">文章，姚笛，马伊琍</a>(13)</li>
+							<li><a href="search.php?searchtype=2&tag=ipad3">ipad3</a>(11)</li>
+						</ul>
+
+</div><div id="register">
+	<h2>会员登陆</h2>
+	<form action="?action=login" method="post" name="login">
+		<dl>
+			<dd>用 户 名：<input type="text" name="username" class="text"/></dd>
+			<dd>密　　码：<input type="password" name="password" class="text"/></dd>
+			<dd>保存登陆：<input type="radio" name="cookie" value="86400"/> 一天<input type="radio" name="cookie" value="604800"/> 一周<input type="radio" name="cookie" value="2592000"/> 一月</dd>
+			<dd>验 证 码：<input type="text" name="code" class="text code"/></dd>
+			<dd class="des">输入下图中的字符，不区分大小写</dd>
+			<dd><img class="code"src="config/code.php" alt="验证码" onclick=" this.src='config/code.php?jiajun='+Math.random();"/></dd>
+			<dd>提　　交：<input type="submit" name="send" class="sub" onclick="return checkLogin()" value="登陆"/></dd>
+		</dl>
+	</form>
+</div>
+
+<div id="link">
+	<h2><span><a href="friendlink.php?action=show">所有链接</a> | <a href="friendlink.php?action=add">申请加入</a></span>友情链接</h2>
+					<ul>
+									<li><a href="http://www.aiqiyi.com" target="_blank">爱奇艺</a></li>
+									<li><a href="http://www.taobao.com" target="_blank">淘宝</a></li>
+									<li><a href="http://www.qq.com" target="_blank">腾讯</a></li>
+									<li><a href="http://baidu.com" target="_blank">百度</a></li>
+								</ul>
+				
+				
+				<dl>
+			<dd><a href="http://www.youku.com" target="_blank" ><img src="/phptest/myCms/images/youku.png" alt="" title=""/></a></dd>
+		</dl>
+				<dl>
+			<dd><a href="http://baidu.com" target="_blank" ><img src="/phptest/myCms/images/baidu.png" alt="" title=""/></a></dd>
+		</dl>
+					
+	
+
+</div>
+<div id="footer">
+	<p>Powered by <a href="#" target="_bank"> YC60.COM</a> (C) 2004-2011 DesDev Inc.</p>
+	<p>Copyright (C) 2004-2011 YC60CMS. <a href="#" target="_bank">瓢城Web俱乐部</a> 版权所有</p>
+</div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,208 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="style/basic.css"/>
+<link rel="stylesheet" type="text/css" href="style/index.css"/>
+<script type="text/javascript" src="js/user_reg.js"></script>
+<script type="text/javascript" src="config/static.php?type=member"></script>
+<title>我的第一个cms系统</title>
+</head>
+<body>
+<div id="top">
+	<script type="text/javascript" src="config/static.php?type=header"></script>
+	<script>getHeader();</script>	<script src="js/text_adver.js"></script>
+</div>
+<div id="header">
+	<a href="#"><h1>mycms系统</h1></a>
+	<div class="adver"><script type="text/javascript" src="js/header_adver.js"></script></div>
+</div>
+<div id="nav">
+	<ul>
+	<li><a href="index.php">首页</a></li>
+						<li><a href="list.php?id=1">军事动态</a></li>
+					<li><a href="list.php?id=2">八卦娱乐</a></li>
+					<li><a href="list.php?id=3">时尚女人</a></li>
+					<li><a href="list.php?id=4">科技频道</a></li>
+					<li><a href="list.php?id=5">智能手机</a></li>
+					<li><a href="list.php?id=7">美容护肤</a></li>
+					<li><a href="list.php?id=8">热门汽车</a></li>
+					<li><a href="list.php?id=9">房产家居</a></li>
+					<li><a href="list.php?id=10">读书教育</a></li>
+					<li><a href="list.php?id=11">股票基金</a></li>
+				</ul>
+</div>
+<div id="search">
+	<form method="get" action="search.php">
+				<select name="searchtype">
+					<option value="0">按关键字</option>
+					<option value="1">按文章标题</option>
+				</select>
+				<input type="text" name="searchkeyword" class="text"/>
+				<input type="submit" name="sent" class="sub" value="查找"/>
+	</form>
+	<strong>TAG标签：</strong>
+	<ul>
+									<li><a href="search.php?searchtype=2&tag=XOOM">XOOM</a>(46)</li>
+							<li><a href="search.php?searchtype=2&tag=平板电脑">平板电脑</a>(17)</li>
+							<li><a href="search.php?searchtype=2&tag=双核">双核</a>(14)</li>
+							<li><a href="search.php?searchtype=2&tag=文章，姚笛，马伊琍">文章，姚笛，马伊琍</a>(13)</li>
+							<li><a href="search.php?searchtype=2&tag=ipad3">ipad3</a>(11)</li>
+						</ul>
+
+</div><div id="user">
+			<script>getMember()</script>	
+	<h3>最近登录会员 <em>─────────────</em></h3>
+					<dl>
+		<dt><img src="images/03.gif"/></dt>
+		<dd>路飞</dd>
+	</dl>
+			<dl>
+		<dt><img src="images/08.gif"/></dt>
+		<dd>黑崎一护</dd>
+	</dl>
+			<dl>
+		<dt><img src="images/17.gif"/></dt>
+		<dd>蜡笔小新</dd>
+	</dl>
+			<dl>
+		<dt><img src="images/22.gif"/></dt>
+		<dd>樱桃小丸子</dd>
+	</dl>
+			<dl>
+		<dt><img src="images/11.gif"/></dt>
+		<dd>葫芦娃</dd>
+	</dl>
+			<dl>
+		<dt><img src="images/09.gif"/></dt>
+		<dd>变形金刚</dd>
+	</dl>
+		
+</div>
+<div id="news">
+	<h3>苹果或增1家iPad生产商 确保年内推出iPad3</h3>
+	<p>据国外媒体报道，某台湾业内人士透露，苹果可能会在今年秋季新增一家iPad生产商，现在它的iPad生产商只有富士康一家。据说苹果这么做是为了确保生产出足够数量的第...[<a href="details.php?id=23">查看全文</a>]</p>
+	<p class="link">
+									<a href="details.php?id=24">摩托XOOM2曝光 新XOO...</a> | 		 				<a href="details.php?id=26">设计时尚高效处理 欧恩N5双...</a>		 				<a href="details.php?id=35">ThinkPad平板电脑 配...</a> | 		 				<a href="details.php?id=38">我的cms大功告成</a>		 		 	</p>
+	<ul>
+								<li><em>05-02</em><a href="details.php?id=38">我的cms大功告成</a></li>
+		 				<li><em>04-14</em><a href="details.php?id=24">摩托XOOM2曝光 新XOOM将支持更高分辨率 </a></li>
+		 				<li><em>04-14</em><a href="details.php?id=26">设计时尚高效处理 欧恩N5双核平板电脑</a></li>
+		 				<li><em>04-13</em><a href="details.php?id=23">苹果或增1家iPad生产商 确保年内推出iPad3</a></li>
+		 				<li><em>04-13</em><a href="details.php?id=25">宏碁10寸平板销量跃居第二 权威调研机构Displ...</a></li>
+		 				<li><em>04-13</em><a href="details.php?id=35">ThinkPad平板电脑 配“小红帽”传统键盘</a></li>
+		 			 	</ul>
+</div>
+<div id="pic">
+	<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" id="scriptmain" name="scriptmain" codebase="http://download.macromedia.com/pub/shockwave/cabs/
+	flash/swflash.cab#version=6,0,29,0" width="268" height="193">
+	      <param name="movie" value="images/lbxml.swf">
+	      <param name="quality" value="high">
+	      <param name="scale" value="noscale">
+	      <param name="LOOP" value="false">
+	      <param name="menu" value="false">
+	      <param name="wmode" value="transparent">
+	      <embed src="images/lbxml.swf" width="268" height="193" loop="false" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" salign="T" name="scriptmain" menu="false" wmode="transparent">
+	</object>
+</div>
+<div id="rec">
+	<h2>特别推荐</h2>
+	<ul>
+				<p>网站暂无数据</p>
+			</ul>
+</div>
+<div id="sidebar_right">
+	<div class="adver"><script type="text/javascript" src="js/sidebar_adver.js"></script></div>
+	<div class="hot">
+		<h2>本月热点</h2>
+		<ul>
+					<p>网站暂无数据</p>
+					</ul>
+	</div>
+	<div class="common">
+		<h2>本月评论排行榜</h2>
+		<ul>
+					<p>网站暂无数据</p>
+					</ul>
+	</div>
+	<div class="vote">
+		<h2>调查投票</h2>
+		<h3>您最喜爱的明星是谁</h3>
+		<form method="post" action="cast.php" target="_blank">
+											<label><input type="radio" name="vote" value="6"/>刘德华</label>
+								<label><input type="radio" name="vote" value="12"/>黄家驹</label>
+								<label><input type="radio" name="vote" value="8"/>张学友</label>
+								<label><input type="radio" name="vote" value="11"/>李小龙</label>
+								
+				<p><input type="submit" name="send" value="投票"/> <input type="button"value="查看" onclick="javascript:window.open('cast.php')"/></p>
+		</form>
+	</div>
+
+</div>
+<div id="picnews">
+	<h2>图文资讯</h2>
+				<p>网站暂无数据</p>
+				
+	
+</div>
+<div id="newslist">
+		
+								<div class="list left top">
+				<h2><a href="list.php?id=1">更多...</a>军事动态</h2>
+				<ul>
+							
+														<li><em>05-02</em><a href="details.php?id=38">我的cms大功告成</a></li>
+														<li><em>04-14</em><a href="details.php?id=24">摩托XOOM2曝光 新XOOM将支持更高...</a></li>
+														<li><em>04-14</em><a href="details.php?id=26">设计时尚高效处理 欧恩N5双核平板电脑</a></li>
+														<li><em>04-13</em><a href="details.php?id=23">苹果或增1家iPad生产商 确保年内推出...</a></li>
+														<li><em>04-13</em><a href="details.php?id=25">宏碁10寸平板销量跃居第二 权威调研机构...</a></li>
+														<li><em>04-13</em><a href="details.php?id=35">ThinkPad平板电脑 配“小红帽”传...</a></li>
+																	</ul>
+			</div>
+					<div class="list right top">
+				<h2><a href="list.php?id=2">更多...</a>八卦娱乐</h2>
+				<ul>
+										</ul>
+			</div>
+					<div class="list left">
+				<h2><a href="list.php?id=3">更多...</a>时尚女人</h2>
+				<ul>
+										</ul>
+			</div>
+					<div class="list right">
+				<h2><a href="list.php?id=4">更多...</a>科技频道</h2>
+				<ul>
+										</ul>
+			</div>
+			</div>
+
+
+<div id="link">
+	<h2><span><a href="friendlink.php?action=show">所有链接</a> | <a href="friendlink.php?action=add">申请加入</a></span>友情链接</h2>
+					<ul>
+									<li><a href="http://www.aiqiyi.com" target="_blank">爱奇艺</a></li>
+									<li><a href="http://www.taobao.com" target="_blank">淘宝</a></li>
+									<li><a href="http://www.qq.com" target="_blank">腾讯</a></li>
+									<li><a href="http://baidu.com" target="_blank">百度</a></li>
+								</ul>
+				
+				
+				<dl>
+			<dd><a href="http://www.youku.com" target="_blank" ><img src="/phptest/myCms/images/youku.png" alt="" title=""/></a></dd>
+		</dl>
+				<dl>
+			<dd><a href="http://baidu.com" target="_blank" ><img src="/phptest/myCms/images/baidu.png" alt="" title=""/></a></dd>
+		</dl>
+					
+	
+
+</div>
+<div id="footer">
+	<p>Powered by <a href="#" target="_bank"> YC60.COM</a> (C) 2004-2011 DesDev Inc.</p>
+	<p>Copyright (C) 2004-2011 YC60CMS. <a href="#" target="_bank">瓢城Web俱乐部</a> 版权所有</p>
+</div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+<div id="top">
+	<script type="text/javascript" src="config/static.php?type=header"></script>
+	{$header}
+	<script src="js/text_adver.js"></script>
+</div>
+<div id="header">
+	<a href="#"><h1>mycms系统</h1></a>
+	<div class="adver"><script type="text/javascript" src="js/header_adver.js"></script></div>
+</div>
+<div id="nav">
+	<ul>
+	<li><a href="index.php">首页</a></li>
+	{if $frontNav}
+		{foreach $frontNav(key,value)}
+			<li><a href="list.php?id={@value->id}">{@value->nav_name}</a></li>
+		{/foreach}
+	{/if}
+	</ul>
+</div>
+<div id="search">
+	<form method="get" action="search.php">
+				<select name="searchtype">
+					<option value="0">按关键字</option>
+					<option value="1">按文章标题</option>
+				</select>
+				<input type="text" name="searchkeyword" class="text"/>
+				<input type="submit" name="sent" class="sub" value="查找"/>
+	</form>
+	<strong>TAG标签：</strong>
+	<ul>
+		{if $fiveTag}
+			{foreach $fiveTag(key,value)}
+				<li><a href="search.php?searchtype=2&tag={@value->tag}">{@value->tag}</a>({@value->count})</li>
+			{/foreach}
+		{/if}
+	</ul>
+
+</div>

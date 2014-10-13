@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" href="../style/admin.css" type="text/css"/>
+<script type="text/javascript" src="../js/admin_manage.js"></script>
+<title>{$webname}</title>
+</head>
+
+<body id="main">
+	<div class="map">
+		管理首页&gt;&gt;内容管理&gt;&gt;<strong style="color:green;" id="title">{$current}</strong>
+	</div>
+	<ol>
+		{if $update}
+			<li><a href="manage.php?action=update">文档列表</a></li>
+		{/if}
+	</ol>
+	{if $delete}
+	 '删除页面'
+	{/if}
+	{if $update}
+		<form method="post" action="" name="update">
+		<input type="hidden" name="id" value="{$oneManage->id}"/>
+		<input type="hidden" name="lever" value="{$oneManage->lever}" id="admin_lever"/>
+		<input type="hidden" name="admin_pass" value="{$oneManage->admin_pass}"/>
+		<input type="hidden" name="prev_url" value="{$prev_url}"/>
+		<table class="table common">
+				<tr><td>用户名：<input type="text" name="admin_user" class="text" value="{$oneManage->admin_user}"readonly="readonly"/></td></tr>
+				<tr><td>密　码：<input type="password" name="modify_pass" class="text"/></td></tr>
+				<tr><td>等　级：<select name="lever" class="text">
+													{foreach $getAllLever(key,value)}
+													<option value="{@value->id}">{@value->lever_name}</option>
+													{/foreach}
+										</select>
+					</td></tr>
+				<tr><td><input type="submit" value="修改管理员" class="submit" name="send" onclick="return checkUpdateForm()"/>[ <a href="manage.php?action=show">返回列表</a> ]</td></tr>
+		</table>
+	</form>
+	{/if}
+
+	{if $show}
+	<form action='?action=states' method="post">
+		<table cellspacing="0" class="table">
+			<tr><th>编号</th><th>评论内容</th><th>评论者</th><th>所属文档</th><th>状态</th><th>批审</th><th>操作</th></tr>
+			{if $allCommend}
+			{foreach $allCommend(key,value)}
+				<tr>
+						<td><script>document.write({@key+1}+{$num})</script></td>
+						<td title="{@value->ct}">{@value->content}</td>
+						<td>{@value->username}</td>
+						<td><a href="../details.php?id={@value->cid}" target="_bank" title="{@value->pct}">查看</a></td>
+						<td>{@value->state}</td>
+						<td><input type="text" name="states[{@value->id}]" value="{@value->num}" class='sort'/></td>
+						<td>[ <a href="?action=delete&id={@value->id}" onclick="return confirm('你真的要删除吗')?true:false">删除</a> ]</td>
+				</tr>
+			{/foreach}
+			<tr><td></td><td></td><td></td><td></td><td></td><td><input type="submit" name="send" value="批审" class="sendSort"/></td></tr>
+			{else}
+					<tr><td colspan="5">暂时没有数据</td></tr>
+			{/if}
+		</table>
+	</form>
+	<div id="page">{$page}</div>
+	{/if}
+
+</body>
+
+
+
+</html>

@@ -1,0 +1,76 @@
+@CHARSET "UTF-8";
+#friendlink{
+	border:1px solid #ccc;
+}
+#friendlink form .text{
+	width:220px;
+	height:20px;
+	background:#eee;
+	border:1px solid #999;
+}
+#friendlink form input.code{
+	width:80px;
+}
+#friendlink form img.code{
+	width:120px;
+	height:50px;
+	margin-left:60px;
+	cursor:pointer;
+}
+#friendlink form{
+	display:block;
+	padding:10px 0;
+}
+#friendlink form dl{
+	padding:0 0 0 250px;
+}
+#friendlink form dl dd{
+	padding:5px 0;
+}
+#friendlink form dl dd img.faceimg{
+	margin:0 0 0 60px;
+}
+#friendlink form dl dd span{
+	color:red;
+}
+#friendlink form dl dd.des{
+	color:orange;
+}
+#friendlink form dl dd input.sub{
+	padding:1px;
+}
+#showlink{
+	height:auto;
+	border:1px solid #ccc;
+	padding:0 0 10px 0;
+}
+#showlink ul{
+	text-indent:10px;
+}
+#showlink ul li{
+	display:inline-block;
+}
+#showlink h3{
+	color:#008022;
+	padding:5px 0 5px 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="style/basic.css"/>
+<link rel="stylesheet" type="text/css" href="style/feedback.css"/>
+<title>{$webname}</title>
+</head>
+<body>
+{include file='header.html'}
+<div id="left">
+	<h2>评论列表</h2>
+	<h3>{$title}</h3>
+
+	<div class="contentInfo">{$info}.......[<a href="details.php?id={$cid}">详情</a>]</div>
+	<h4 class="hot">最火评论</h4>
+		{if $hot}
+			{foreach $hot(key,value)}
+					<dl>
+						<dt><img src ="images/{@value->face}"/></dt>
+						<dd class="hot"><em>{@value->date} 发表</em><span>[{@value->username}]</span> <img src="images/hot.gif"/></dd>
+						<dd class="info">[<b style="color:red">{@value->manner}</b>]{@value->content}</dd>
+						<dd class="bottom"><a href="?type=support&id={@value->id}&cid={$cid}">[{@value->support}]支持</a> <a href="?type=oppose&id={@value->id}&cid={$cid}">[{@value->oppose}]反对</a></dd>
+					</dl>
+			{/foreach}
+		{/if}
+
+
+	<h4 class="new">最新评论</h4>
+		{if $commend}
+			{foreach $commend(key,value)}
+						<dl>
+						<dt><img src ="images/{@value->face}"/></dt>
+						<dd><em>{@value->date} 发表</em><span>[{@value->username}]</span></dd>
+						<dd class="info">[<b style="color:red">{@value->manner}</b>]{@value->content}</dd>
+						<dd class="bottom"><a href="?type=support&id={@value->id}&cid={$cid}">[{@value->support}]支持</a> <a href="?type=oppose&id={@value->id}&cid={$cid}">[{@value->oppose}]反对</a></dd>
+					</dl>
+
+			{/foreach}
+				<div id="page">{$page}</div>
+
+		{else}
+			<p>暂时没有评论</p>
+		{/if}
+		<div class="commend">
+		<form action="feedback.php?id={$cid}"method="post" name="commend">
+			<p>您对本文的态度：<input type="radio" name=""manner"  checked="checked" value="0"/>中立<input type="radio" name="manner" value="1"/>支持<input name=""manner"" type="radio" value="2"/>反对</p>
+			<p class="notice">请互联网规则，不要发表关于政治、反动、色情之类的评论。</p>
+			<p><textarea name="content"></textarea></p>
+			<p >验证码：<input type="text" name="code" class="text"/> <img class="code"src="config/code.php" alt="验证码" onclick=" this.src='config/code.php?jiajun='+Math.random();"/> <input type="submit" name="send" value="提交评论" class="sub" onclick="return checkCommend()"/></p>
+		</form>
+	</div>
+</div>
+<div id="right">
+	<div class="list">
+	<h2>热门文章排行</h2>
+	<ul>
+		{if $twentyContent}
+			{foreach $twentyContent(key,value)}
+			<li><a href="details.php?action=show&id={@value->id}">{@value->title}</a></li>
+			{/foreach}
+		{/if}
+	</ul>
+</div>
+</div>
+{include file='footer.html'}
+</body>
+</html>

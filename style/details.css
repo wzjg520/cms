@@ -1,0 +1,186 @@
+@CHARSET "UTF-8";
+#left{
+	width:690px;
+	min-height:600px;
+	float:left;
+	margin-bottom:10px;
+}
+#left h2{
+	border:1px solid #ccc;
+	border-bottom:none;
+}
+#left h3{
+	padding:10px 0 0 0;
+	font-size:20px;
+	text-align:center;
+}
+#left div.date{
+	text-align:center;
+	padding:10px;
+}
+#left div.content{
+	padding:10px;
+	line-height:200%;
+}
+#left div.tag{
+	line-height:150%;
+	background:#fffffe;
+	border:1px dashed #ccc;
+	padding:10px;
+	margin:10px;
+}
+
+
+
+
+
+
+#left div.new_commend{
+	width:690px;
+	float:left;
+	margin-bottom:10px;
+	border:1px solid #ccc;
+	padding:0 0 20px 0;
+}
+#left div.new_commend p{
+	text-align:center;
+	padding:10px 0 0 0;
+}
+#left div.new_commend h2{
+	border:none;
+}
+#left div.new_commend h2 span{
+	float:right;
+	color:#666;
+	padding:0 10px 0 0;
+}
+#left div.new_commend h2 span a{
+
+	color:red;
+}
+#left div.new_commend h3{
+	padding:10px 0 0 0;
+	font-size:20px;
+	text-align:center;
+}
+#left div.new_commend dl{
+	float:left;
+	padding:10px 10px 10px 0;
+	margin-left:10px;
+	width:660px;
+	border-bottom:1px dashed #ccc;
+
+}
+#left div.new_commend dl dt{
+	float:left;
+}
+#left div.new_commend dl dd{
+	float:right;
+	width:580px;
+}
+#left div.new_commend dl dd em{
+	float:right;
+	color:maroon;
+}
+#left div.new_commend dl dd span{
+	color:green;
+}
+#left div.new_commend dl dd.info{
+	line-height:20px;
+	padding:5px 0;
+}
+#left div.new_commend dl dd.bottom{
+	text-align:right;
+}
+
+
+
+
+
+
+
+
+
+#left div.commend{
+	clear:both;
+	background:#fff;
+	border:1px solid #ccc;
+	padding:10px;
+	margin:5px;
+}
+#left div.commend p{
+	padding:5px 0;
+}
+#left div.commend p textarea{
+	width:650px;
+	max-width:650px;
+	height:150px;
+	min-height:150px;
+	background:#eee;
+	border:1px solid #666;
+}
+#left div.commend p img.code{
+	width:65px;
+	height:30px;
+	cursor:pointer;
+	margin:0 0 -10px 0;
+}
+#left div.commend p input.text{
+	border:1px solid #666;
+	width:80px;
+	background:#ccc;
+}
+#left div.commend p input.sub{
+	background:#eee;
+	padding:1px;
+	border:1px solid #999;
+	cursor:pointer;
+}
+#left div.commend p.notice{
+	color:red;
+}
+
+
+
+#left div.info{
+	line-height:150%;
+	background:#ffffee;
+	border:1px solid #ccc;
+	padding:5px;
+	margin:5px;
+}
+#right{
+	width:260px;
+	min-height:600px;
+	float:right;
+	margin-bottom:10px;
+}
+#right .list{
+	width:100%;
+	border:1px solid #ccc;
+	float:left;
+	margin-bottom:10px;
+}
+#right .list ul{
+	padding:0 10px;
+}
+#right .list ul li{
+	height:20px;
+	line-height:20px;
+	padding:2px 0;
+	background:url(../images/pointer.png) no-repeat left center;
+	text-indent:10px;
+
+}
+#right .list ul li a{
+	color:#666
+}
+#right .list ul li a:hover{
+	text-decoration:underline;
+}
+#right .list ul li em{
+	float:right;
+	font-family:Times New Roman;
+	font-style:normal;
+	color:maroon;
+}

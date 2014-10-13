@@ -1,0 +1,143 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="style/basic.css"/>
+<link rel="stylesheet" type="text/css" href="style/list.css"/>
+<title>我的第一个cms系统</title>
+</head>
+<body>
+<div id="top">
+	<script type="text/javascript" src="config/static.php?type=header"></script>
+	<script>getHeader();</script>	<script src="js/text_adver.js"></script>
+</div>
+<div id="header">
+	<a href="#"><h1>mycms系统</h1></a>
+	<div class="adver"><script type="text/javascript" src="js/header_adver.js"></script></div>
+</div>
+<div id="nav">
+	<ul>
+	<li><a href="index.php">首页</a></li>
+						<li><a href="list.php?id=1">军事动态</a></li>
+					<li><a href="list.php?id=2">八卦娱乐</a></li>
+					<li><a href="list.php?id=3">时尚女人</a></li>
+					<li><a href="list.php?id=4">科技频道</a></li>
+					<li><a href="list.php?id=5">智能手机</a></li>
+					<li><a href="list.php?id=7">美容护肤</a></li>
+					<li><a href="list.php?id=8">热门汽车</a></li>
+					<li><a href="list.php?id=9">房产家居</a></li>
+					<li><a href="list.php?id=10">读书教育</a></li>
+					<li><a href="list.php?id=11">股票基金</a></li>
+				</ul>
+</div>
+<div id="search">
+	<form method="get" action="search.php">
+				<select name="searchtype">
+					<option value="0">按关键字</option>
+					<option value="1">按文章标题</option>
+				</select>
+				<input type="text" name="searchkeyword" class="text"/>
+				<input type="submit" name="sent" class="sub" value="查找"/>
+	</form>
+	<strong>TAG标签：</strong>
+	<ul>
+									<li><a href="search.php?searchtype=2&tag=XOOM">XOOM</a>(46)</li>
+							<li><a href="search.php?searchtype=2&tag=平板电脑">平板电脑</a>(17)</li>
+							<li><a href="search.php?searchtype=2&tag=双核">双核</a>(14)</li>
+							<li><a href="search.php?searchtype=2&tag=文章，姚笛，马伊琍">文章，姚笛，马伊琍</a>(13)</li>
+							<li><a href="search.php?searchtype=2&tag=ipad3">ipad3</a>(11)</li>
+						</ul>
+
+</div><div id="left">
+	<h2>当前位置&gt;<a href="list.php?id=1">军事动态</a></h2>
+						<dl>
+				<dt><img src="/web/cms/upload/20140502/20140502134231109.jpg"/></dt>
+				<dd>[<strong>中国军事</strong>]<a href="details.php?id=38" class="title">我的cms大功告成</a></dd>
+				<dd>日期：2014-05-02 13:44:31 点击率：108 关键字：成功,喜悦,自信</dd>
+				<dd>近日，权威调研机构DisplaySearch的报告显示，宏碁推出的10.1英寸平板电脑ICONIA TAB A500在全球的出货量已达80万台，居全球10英寸平板电脑市场第二位，仅次于苹果旗下的iPad。</dd>
+			</dl>
+					<dl>
+				<dt><img src="/phptest/myCms/uploads/20110719/20110719212521748.jpg"/></dt>
+				<dd>[<strong>日本军事</strong>]<a href="details.php?id=24" class="title">摩托XOOM2曝光 新XOOM将支持更高分辨率 </a></dd>
+				<dd>日期：2014-04-14 21:03:43 点击率：173 关键字：摩托XOOM2,高分辨率</dd>
+				<dd>今年年初，摩托罗拉推出的第一款搭载蜂巢系统的平板电脑XOOM在平板市场投放了一枚重磅炸弹，但可惜的是这款XOOM并不能算作出色的平板电脑。好在摩托并没有作罢，XOOM还没坐热市场，关于它的继任者XOOM 2的传闻已经风生水起了。上周在FCC...</dd>
+			</dl>
+					<dl>
+				<dt><img src="/phptest/myCms/uploads/20110719/20110719212914256.jpg"/></dt>
+				<dd>[<strong>中国军事</strong>]<a href="details.php?id=26" class="title">设计时尚高效处理 欧恩N5双核平板电脑</a></dd>
+				<dd>日期：2014-04-14 21:02:23 点击率：154 关键字：平板电脑,欧恩N5,双核</dd>
+				<dd>欧恩N5是一款任务处理速度极快的A9双核平板电脑，其影像读取速度是普通平板电脑的1倍左右，并可通过内置的“欧翔引擎”，达到普通设备1.5-2倍的读取播放速度。</dd>
+			</dl>
+					<dl>
+				<dt><img src="/phptest/myCms/uploads/20110719/20110719212422412.jpg"/></dt>
+				<dd>[<strong>美国军事</strong>]<a href="details.php?id=23" class="title">苹果或增1家iPad生产商 确保年内推出iPad3</a></dd>
+				<dd>日期：2014-04-13 13:15:21 点击率：1089 关键字：推出ipad3,增加生产商,苹果</dd>
+				<dd>据国外媒体报道，某台湾业内人士透露，苹果可能会在今年秋季新增一家iPad生产商，现在它的iPad生产商只有富士康一家。据说苹果这么做是为了确保生产出足够数量的第三代iPad，以保证在年内推出第三代iPad。富士康的工厂在5月份发生了爆炸事故...</dd>
+			</dl>
+					<dl>
+				<dt><img src="/phptest/myCms/uploads/20110719/20110719212740635.jpg"/></dt>
+				<dd>[<strong>中国军事</strong>]<a href="details.php?id=25" class="title">宏碁10寸平板销量跃居第二 权威调研机构DisplaySearch的报...</a></dd>
+				<dd>日期：2014-04-13 13:14:31 点击率：242 关键字：宏基,10寸,平板电脑</dd>
+				<dd>近日，权威调研机构DisplaySearch的报告显示，宏碁推出的10.1英寸平板电脑ICONIA TAB A500在全球的出货量已达80万台，居全球10英寸平板电脑市场第二位，仅次于苹果旗下的iPad。</dd>
+			</dl>
+			
+	<div id="page"><a href="/web/cms/list.php?id=1&page=1" class="index">1</a><a href="/web/cms/list.php?id=1&page=2">2</a><span class="disable">上一页</span><a href="/web/cms/list.php?id=1&page=2">下一页</a></div>
+</div>
+<div id="right">
+	<div class="nav">
+		<h2>子栏目列表</h2>
+								<strong><a href="list.php?id=27">美国军事</a></strong>
+						<strong><a href="list.php?id=29">日本军事</a></strong>
+						<strong><a href="list.php?id=26">中国军事</a></strong>
+						<strong><a href="list.php?id=30">韩国军事</a></strong>
+						<strong><a href="list.php?id=32">朝鲜军事</a></strong>
+						<strong><a href="list.php?id=33">越南军事</a></strong>
+						</div>
+	<div class="list">
+	<h2>本月本类推荐</h2>
+	<ul>
+			
+							<li><em>05-02</em><a href="details.php?id=38">我的cms大功告成.</a></li>
+						</ul>
+</div>
+<div class="list">
+	<h2>本月热点推荐</h2>
+	<ul>
+			
+							<li><em>05-02</em><a href="details.php?id=38">我的cms大功告成.</a></li>
+						</ul>
+</div>
+<div class="list">
+	<h2>本月图文推荐</h2>
+	<ul>
+			
+							<li><em>05-02</em><a href="details.php?id=38">我的cms大功告成</a></li>
+						</ul>
+</div>
+</div>
+
+<div id="link">
+	<h2><span><a href="friendlink.php?action=show">所有链接</a> | <a href="friendlink.php?action=add">申请加入</a></span>友情链接</h2>
+					<ul>
+									<li><a href="http://www.aiqiyi.com" target="_blank">爱奇艺</a></li>
+									<li><a href="http://www.taobao.com" target="_blank">淘宝</a></li>
+									<li><a href="http://www.qq.com" target="_blank">腾讯</a></li>
+									<li><a href="http://baidu.com" target="_blank">百度</a></li>
+								</ul>
+				
+				
+				<dl>
+			<dd><a href="http://www.youku.com" target="_blank" ><img src="/phptest/myCms/images/youku.png" alt="" title=""/></a></dd>
+		</dl>
+				<dl>
+			<dd><a href="http://baidu.com" target="_blank" ><img src="/phptest/myCms/images/baidu.png" alt="" title=""/></a></dd>
+		</dl>
+					
+	
+
+</div>
+<div id="footer">
+	<p>Powered by <a href="#" target="_bank"> YC60.COM</a> (C) 2004-2011 DesDev Inc.</p>
+	<p>Copyright (C) 2004-2011 YC60CMS. <a href="#" target="_bank">瓢城Web俱乐部</a> 版权所有</p>
+</div></body>
+</html>

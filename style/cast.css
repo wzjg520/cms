@@ -1,0 +1,23 @@
+@CHARSET "UTF-8";
+#cast{
+	border:1px solid #ccc;
+}
+#cast table{
+	width:80%;
+	margin:15px auto;
+	background:#ccc;
+	text-align:center;	
+}
+#cast table caption{
+	font-size:16px;
+	font-weight:bold;
+	padding:0 0 10px 0;
+}
+#cast table tr td,table tr th{
+	background:#fff;
+	padding:10px;
+}
+#cast table tr td img{
+	height:21px;
+}
+
